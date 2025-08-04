@@ -1,28 +1,20 @@
 public class Car {
-    static String name = "BMW";
-    static String color = "RED";
-    static int speed = 200;
-    static int mileagekm = 10;
-    static boolean auto;
+    private String name;
+    private String fuelType;
 
-    public static void main(String args[]) {
-        // String name = "";
-        System.out.println(name);
-        System.out.println(color);
-        System.out.println(speed);
-        System.out.println(mileagekm);
-        System.out.println(auto);
-        CarDrive();
-        mileage();
-
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public static void CarDrive() {
-        System.out.println("the car is going at the speed" + speed + " km/hr");
+    public void setFuelType(String fuelType) {
+        this.fuelType = fuelType;
     }
 
-    public static void mileage() {
-        System.out.println("mileage is very less" + mileagekm + " km/h");
+    public String getName() {
+        return this.name;
     }
 
+    public String getFuelType() {
+        return this.fuelType;
+    }
 }
