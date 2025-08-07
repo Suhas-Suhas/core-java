@@ -12,6 +12,22 @@ public class Country {
         return name;
     }
 
+    public int getNumberOfStates() {
+        return numberOfStates;
+    }
+
+    public void setNumberOfStates(int numberOfStates) {
+        this.numberOfStates = numberOfStates;
+    }
+
+    public String getPrimeMinister() {
+        return primeMinister;
+    }
+
+    public void setPrimeMinister(String primeMinister) {
+        this.primeMinister = primeMinister;
+    }
+
     public void setStates(State[] states) {
         this.states = states;
     }
